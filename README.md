@@ -1,7 +1,7 @@
 # computationalphysics_N2014301020005
 
 - [ ] exercise_1:
-- [ ] exercise_2:
+- [ ] exercise_2:https://www.zybuluo.com/zztlovecomputationalphysics/note/502541
 - [ ] exercise_3:
 - [ ] exercise_4:
 - [ ] exercise_5:
