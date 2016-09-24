@@ -2,7 +2,7 @@
 
 - [ ] exercise_1:
 - [ ] exercise_2:https://www.zybuluo.com/zztlovecomputationalphysics/note/502541
-- [ ] exercise_3:L1:https://www.zybuluo.com/zztlovecomputationalphysics/note/511828
+- [ ] exercise_3:L1:https://www.zybuluo.com/zy-0815/note/512515
 - [ ] exercise_4:
 - [ ] exercise_5:
 - [ ] exercise_6:
