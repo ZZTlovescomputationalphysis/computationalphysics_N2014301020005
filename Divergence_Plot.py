@@ -1,3 +1,11 @@
+#Divergence Plots
+'''
+a=billiard(100,1,0,2,3,1.001,0,2,3,100,0.01)
+for i in range(100):
+    m=a.new_collisions()
+    a.new_movement2(m[0],m[1],m[2],m[3])
+a.show()
+'''
 import pylab as pl
 r=13#set a global variable for the radius of stadium
 import math
@@ -207,9 +215,4 @@ class billiard:
        pl.title('Stadium Divergence,Intial divegence is %.4f($m$)'%distance[0])
        pl.show()
 
-a=billiard(100,1,0,2,3,1.001,0,2,3,100,0.01)
-for i in range(100):
-    m=a.new_collisions()
-    a.new_movement2(m[0],m[1],m[2],m[3])
-a.show()
 
