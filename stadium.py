@@ -1,3 +1,14 @@
+#Stadium plots as well as Circular plots.
+#You only need to to wipe new to gain the circular plots
+'''
+b=billiard(100,3,0,2,2,100,0.01)
+b.new_movement()
+for i in range(1000):
+    n=a.new_collisions()    
+    b.new_movement2(n[0],n[1])
+b.show_new_boundary()
+b.show_trajectory()
+'''
 import pylab as pl
 r=13#set a global variable for the radius of stadium
 import math
@@ -205,28 +216,3 @@ class billiard:
        pl.plot([r,r],[-self.alpha*r,self.alpha*r])
        pl.plot([-r,-r],[-self.alpha*r,self.alpha*r])
         
-        
-kx=[]
-ky=[]
-px=[]
-py=[]
-distance=[]
-
-a=billiard(100,3,0,2,2,100,0.01)
-a.new_movement()
-for i in range(1000):
-    m=a.new_collisions()    
-    a.new_movement2(m[0],m[1])
-    k=a.new_movement2(m[0],m[1])
-    kx.append(k[0][-1])
-    ky.append(k[1][-1])
-
-b=billiard(100,3,0,2,2,100,0.01)
-b.new_movement()
-for i in range(1000):
-    n=a.new_collisions()    
-    b.new_movement2(n[0],n[1])
-    p=b.movement2(n[0],n[1])
-    px.append(p[0][-1])
-    py.append(p[1][-1])
-
