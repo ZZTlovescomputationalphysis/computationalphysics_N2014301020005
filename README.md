@@ -6,4 +6,4 @@
 - [x] exercise_6:https://www.zybuluo.com/zy-0815/note/538341
 - [x] exercise_7:https://www.zybuluo.com/zy-0815/note/550138
 - [x] exercise_8:https://www.zybuluo.com/zy-0815/note/565601
-- [ ] exercise_9:
+- [x] exercise_9:https://www.zybuluo.com/zy-0815/note/569686
