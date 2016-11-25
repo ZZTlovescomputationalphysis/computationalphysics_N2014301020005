@@ -1,11 +1,8 @@
 import math
-import numpy as np
 import matplotlib.pyplot as plt
-# physical constants
 GM=4*(math.pi**2)
-perihelion=0.39*(1-0.206) # to remain the oerihelion the same as that of Mercury.
-# begin the class
-class precession:
+perihelion=0.39*(1-0.206)
+class Precession:
     def __init__(self,e=0.206,time=2.,dt=0.0001,vcoefficient=1,beta=2,alpha=0.0008):
         self.alpha=alpha
         self.beta=beta
@@ -26,7 +23,7 @@ class precession:
         self.ThetaPrecession=[]
         self.TimePrecession=[]
         return None
-    def calculate(self):
+    def run(self):
         while self.T[-1]<self.time:
             r=math.sqrt(self.X[-1]**2+self.Y[-1]**2)
             newVx=self.Vx[-1]-(GM*(1+self.alpha/r**2)*self.X[-1]/r**(1+self.beta))*self.dt
@@ -46,8 +43,8 @@ class precession:
             self.Y.append(newY)
             self.T.append(self.T[-1]+self.dt)
         return 0
-    def plot(self,slogan=''):
-        plt.plot(self.X,self.Y,label=slogan)
+    def show_results(self):
+        plt.plot(self.X,self.Y)
         plt.legend(loc='upper right',frameon=False,fontsize='small')
         plt.grid(True)
         plt.title('The precession of Mercury with different Eccentricity')
@@ -58,17 +55,13 @@ class precession:
         #plt.scatter(0,0)
         
         return 0
-    def orientation(self,slogan=''):
-        plt.plot(self.TimePrecession,self.ThetaPrecession,label=slogan)
-        plt.scatter(self.TimePrecession,self.ThetaPrecession,label=slogan)
+    def orientation(self):
+        plt.plot(self.TimePrecession,self.ThetaPrecession)
+        plt.scatter(self.TimePrecession,self.ThetaPrecession)
         plt.legend(loc='upper right',frameon=False,fontsize='xx-small')
         plt.grid(True)
         print self.ThetaPrecession
         print self.TimePrecession
         return 0
-
-A=precession(e=0.206,time=50.0,alpha=0.8)
-A.calculate()
-A.orientation(slogan=r'$\alpha=0.008$')
 
     
