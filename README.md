@@ -9,3 +9,4 @@
 - [x] exercise_9:https://www.zybuluo.com/zy-0815/note/569686
 - [x] exercise_10:https://www.zybuluo.com/zy-0815/note/578887
 - [x] exercise_11:https://www.zybuluo.com/zy-0815/note/586758
+- [x] exercise_12:https://www.zybuluo.com/zy-0815/note/596556
