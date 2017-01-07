@@ -12,7 +12,7 @@
 - [x] exercise_12:https://www.zybuluo.com/zy-0815/note/596556
 - [x] exercise_13:https://www.zybuluo.com/zy-0815/note/602904
 
-- [x] Final Assignment(PDF Version with better experience):
+- [x] Final Assignment(PDF Version with better experience):https://pan.baidu.com/s/1o8rsOdW
 （It might take a little longer to load,but it do provide better reading experience than CMD version!）
 
 - [x] Final Assignment(CMD Version):https://www.zybuluo.com/zy-0815/note/613562
